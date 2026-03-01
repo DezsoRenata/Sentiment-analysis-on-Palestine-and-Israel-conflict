@@ -1,3 +1,4 @@
+## Introduction
 The objective of this research is to analyse the public opinion of the Israel–Palestine conflict by examining online discussions and identifying sentiment patterns, key themes and commonly used language associated with each position. 
 The main research questions are: 
 What are the key terms used to express the two opposing positions?
@@ -30,8 +31,7 @@ After filtering the final dataset remained with 400 comments:
 •	207 Pro-Palestine
 •	193 Pro-Israel
 
-Data preprocessing
-
+## Data preprocessing
 Text preprocessing steps included: 
 •	Removal of punctuation and special characters
 •	Conversion to lowercase
@@ -39,13 +39,12 @@ Text preprocessing steps included:
 •	Tokenization
 •	Lemmatization to reduce words to their base form
 
-Sentiment Analysis
-
+## Sentiment Analysis
 Text representation was performed using a Document-Term Matrix (DTM) with a vocabulary size of 6000 words. 
 The dataset was split in 80% training data and 20% testing data. 
 Two classification algorithms were applied, XGBoost Classifier and Support Vector Machine (SVM).
 
-XGBoost Results
+## XGBoost Results
 •	Precision: 0.73 (Pro-Palestine), 0.67 (Pro-Israel)
 •	Recall: 0.66 (Pro-Palestine), 0.74 (Pro-Israel)
 •	F1-score: 0.69 (Pro-Palestine), 0.71 (Pro-Israel)
@@ -57,7 +56,7 @@ Support Vector Machine Results
 •	F1-score: 0.68 (Pro-Palestine), 0.71 (Pro-Israel)
 •	Overall Accuracy: 70%
 
-Model Comparison
+## Model Comparison
 Both models show similar performance with minor differences:
 •	SVM achieves slightly higher precision for the Pro-Palestine class
 •	SVM also shows better recall for the Pro-Israel class
@@ -66,6 +65,6 @@ Overall accuracy and macro averages are identical. While SVM performs marginally
 
 The research also includes a co-occurrence network analysis to identify relationships between frequently used words and uncover thematic structures within the discussions. 
 
-Conclusions
+## Conclusions
 Regarding the results of the exploratory analysis, the most frequently used words are related to supporting positions, as well as to war and violence. Both categories of opinions, those about Israel and those about Palestine, share common themes of freedom and war, as well as sympathy and frustration.
 This analysis aimed to examine the way people express their opinions regarding their positions on Israel and Palestine. In doing so, I sought to focus on comments posted on the Reddit platform, more specifically to emphasize the nature of the discourse and the authors’ expressions. Both pro-Israel and pro-Palestine supporters use emotional and moral arguments to support their points of view. While both models show reasonable performance, further improvements could be achieved through larger datasets, more advanced feature representations, or deep learning approaches.
