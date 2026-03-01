@@ -23,7 +23,7 @@ Examples of discussions include:
 Since the research focuses on events following the 2023 escalation, comments were extracted between the timeframe of December 2023 – June 2024. The total number of the comments is 1000. 
 
 
-## Data Cleaning
+## Data cleaning
 Reddit is known to enable anonymous participation, which often leads to open, honest and highly diverse discussions. As a result, many comments may deviate from the research topic, making automated analysis challenging. 
 
 In order to ensure relevance and accuracy, manual data was performed instead of an automated one. For further analysis only comments explicitly expressing positions toward Isarel or Palestine were retained. Off topic or ambiguous comments were removed.
@@ -82,7 +82,7 @@ The model demonstrates balanced performance across both classes, though improvem
 
 •	Overall Accuracy: 70%
 
-## Model Comparison
+## Model comparison
 Both models show similar performance with minor differences:
 
 •	SVM achieves slightly higher precision for the Pro-Palestine class
