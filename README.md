@@ -11,33 +11,48 @@ Exploratory analysis: identification of themes, patterns and relationship betwee
 ## Data collection
 The dataset consists of English language comments reflecting debates and opinions supporting either israel or Palestine, collected from Reddit platform.
 Examples of discussions include: 
-•	“What is your opinion on the Israel–Gaza war?”
-•	“What is the deal with the Israel–Palestine conflict? Who is right, who is wrong?”
-•	“Has anyone noticed a shift in public opinion regarding the Gaza conflict?”
-•	“How have your views on the Israel–Palestine conflict changed in the last month?”
-Since the research focuses on events following the 2023 escalation, comments were extracted between the timeframe of December 2023 – June 2024. The total number of the comments is 1000. 
 
+•	“What is your opinion on the Israel–Gaza war?”
+
+•	“What is the deal with the Israel–Palestine conflict? Who is right, who is wrong?”
+
+•	“Has anyone noticed a shift in public opinion regarding the Gaza conflict?”
+
+•	“How have your views on the Israel–Palestine conflict changed in the last month?”
+
+Since the research focuses on events following the 2023 escalation, comments were extracted between the timeframe of December 2023 – June 2024. The total number of the comments is 1000. 
 
 
 ## Data Cleaning
 Reddit is known to enable anonymous participation, which often leads to open, honest and highly diverse discussions. As a result, many comments may deviate from the research topic, making automated analysis challenging. 
+
 In order to ensure relevance and accuracy, manual data was performed instead of an automated one. For further analysis only comments explicitly expressing positions toward Isarel or Palestine were retained. Off topic or ambiguous comments were removed.
+
 Comments were manually labeled into two categories: 
-•	Pro-Israel  (e.g., “I support Israel”, “Zionist”, “Palestinian terrorism”)
-•	Pro-Palestine (e.g., “I stand with Palestine”, “Anti-Zionist”, “Genocide”, “Anti-Hamas”)
+
+•	Pro-Israel  
+
+•	Pro-Palestine 
 
 Criticism of Israel involving terrorism or military actions was also considered supportive of the pro-Palestine position.
+
 After filtering the final dataset remained with 400 comments:
+
 •	207 Pro-Palestine
+
 •	193 Pro-Israel
 
 ## Data preprocessing
 Text preprocessing steps included: 
+
 •	Removal of punctuation and special characters
+
 •	Conversion to lowercase
+
 •	Stop-word removal
+
 •	Tokenization
-•	Lemmatization to reduce words to their base form
+
 
 ## Sentiment Analysis
 Text representation was performed using a Document-Term Matrix (DTM) with a vocabulary size of 6000 words. 
