@@ -41,30 +41,46 @@ Text preprocessing steps included:
 
 ## Sentiment Analysis
 Text representation was performed using a Document-Term Matrix (DTM) with a vocabulary size of 6000 words. 
+
 The dataset was split in 80% training data and 20% testing data. 
+
 Two classification algorithms were applied, XGBoost Classifier and Support Vector Machine (SVM).
 
 ## XGBoost Results
 •	Precision: 0.73 (Pro-Palestine), 0.67 (Pro-Israel)
+
 •	Recall: 0.66 (Pro-Palestine), 0.74 (Pro-Israel)
+
 •	F1-score: 0.69 (Pro-Palestine), 0.71 (Pro-Israel)
+
 •	Overall Accuracy: 70%
+
 The model demonstrates balanced performance across both classes, though improvements are possible, particularly in recall and precision.
-Support Vector Machine Results
+
+## Support Vector Machine Results
+
 •	Precision: 0.74 (Pro-Palestine), 0.67 (Pro-Israel)
+
 •	Recall: 0.63 (Pro-Palestine), 0.77 (Pro-Israel)
+
 •	F1-score: 0.68 (Pro-Palestine), 0.71 (Pro-Israel)
+
 •	Overall Accuracy: 70%
 
 ## Model Comparison
 Both models show similar performance with minor differences:
+
 •	SVM achieves slightly higher precision for the Pro-Palestine class
+
 •	SVM also shows better recall for the Pro-Israel class
+
 •	XGBoost maintains more balanced recall across both classes
+
 Overall accuracy and macro averages are identical. While SVM performs marginally better in certain metrics, the differences are relatively minor.
 
 The research also includes a co-occurrence network analysis to identify relationships between frequently used words and uncover thematic structures within the discussions. 
 
 ## Conclusions
 Regarding the results of the exploratory analysis, the most frequently used words are related to supporting positions, as well as to war and violence. Both categories of opinions, those about Israel and those about Palestine, share common themes of freedom and war, as well as sympathy and frustration.
+
 This analysis aimed to examine the way people express their opinions regarding their positions on Israel and Palestine. In doing so, I sought to focus on comments posted on the Reddit platform, more specifically to emphasize the nature of the discourse and the authors’ expressions. Both pro-Israel and pro-Palestine supporters use emotional and moral arguments to support their points of view. While both models show reasonable performance, further improvements could be achieved through larger datasets, more advanced feature representations, or deep learning approaches.
